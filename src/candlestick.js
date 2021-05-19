@@ -74,7 +74,7 @@ function findPattern(dataArray, callback) {
 
         // Destructure args and find matches.
         if (callback(...args)) {
-            matches.push(args[1]);
+            matches.push(args[callback.length - 1]);
         }
     }
 
